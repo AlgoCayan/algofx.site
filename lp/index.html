@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trading Page</title>
     <style>
-        /* Estilos CSS embutidos no HTML */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -27,13 +26,13 @@
         .headline {
             font-size: 24px;
             font-weight: bold;
-            margin-top: 2px; /* Margem reduzida para o topo */
-            margin-bottom: 20px;
+            margin-top: 5px; /* Reduzida para melhor visualização no mobile */
+            margin-bottom: 15px; /* Reduzida para menos espaço vertical */
         }
 
         .subheadline {
             font-size: 18px;
-            margin-bottom: 30px;
+            margin-bottom: 20px; /* Ajuste menor */
         }
 
         .video {
@@ -41,8 +40,26 @@
         }
 
         .footer {
-            margin-top: 20px;
+            margin-top: 10px; /* Menor espaçamento no footer */
             font-size: 14px;
+        }
+
+        /* Media query para telas menores (mobile) */
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 20px; /* Tamanho menor para se ajustar melhor */
+                margin-top: 3px; /* Margem ainda menor no topo */
+                margin-bottom: 10px;
+            }
+
+            .subheadline {
+                font-size: 16px; /* Texto menor */
+                margin-bottom: 15px; /* Menos espaço entre elementos */
+            }
+
+            .container {
+                padding: 5px; /* Reduzir o padding geral */
+            }
         }
     </style>
 </head>
