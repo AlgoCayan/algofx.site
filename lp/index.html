@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trading Page</title>
     <style>
-        /* Ajuste de margens e espaçamentos */
+        /* Ajuste geral */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -14,54 +14,51 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start; /* Alinha ao topo */
+            justify-content: flex-start;
             min-height: 100vh;
-            padding-top: 10px; /* Reduz o espaçamento no topo */
+            padding-top: 20px; /* Aumentei o espaço no topo */
         }
 
         .container {
             text-align: center;
             max-width: 800px;
-            padding: 5px; /* Reduzido para compactar */
+            padding: 20px; /* Aumentei o padding geral */
         }
 
         .headline {
             font-size: 24px;
             font-weight: bold;
-            margin: 0; /* Remove margem extra */
-            padding-bottom: 10px; /* Espaçamento controlado */
+            margin: 10px 0; /* Adicionei margem em cima e embaixo */
         }
 
         .subheadline {
             font-size: 18px;
-            margin: 0; /* Remove margem extra */
-            padding-bottom: 15px; /* Ajuste o espaçamento */
+            margin: 15px 0; /* Aumentei o espaçamento entre o texto */
         }
 
         .video {
-            margin-bottom: 20px;
+            margin-bottom: 25px; /* Mais espaço abaixo do vídeo */
         }
 
         .footer {
-            margin-top: 10px;
+            margin-top: 15px;
             font-size: 14px;
         }
 
+        /* Ajustes para dispositivos móveis */
         @media (max-width: 768px) {
             .headline {
-                font-size: 20px;
-                margin: 0;
-                padding-bottom: 8px;
+                font-size: 22px; /* Tamanho da fonte levemente menor no mobile */
+                margin: 8px 0;
             }
 
             .subheadline {
                 font-size: 16px;
-                margin: 0;
-                padding-bottom: 10px;
+                margin: 12px 0;
             }
 
             .container {
-                padding: 5px;
+                padding: 15px; /* Ajustei o padding geral para telas menores */
             }
         }
     </style>
